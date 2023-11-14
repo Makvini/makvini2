@@ -1420,7 +1420,7 @@ main .faq .father-dropdown-container .dropdown-container .bg-dropdown-container 
     border-radius: 44px;
     width: calc(100% + 24px);
     height: calc(100% + 24px);
-    background-image: url("./static/img/Form_mobile.png");
+    background-image: url("./../img/Form_mobile.png");
     border-radius: 32px;
   }
   main .space-lr .container-preview-logotype .div-free {
@@ -1806,11 +1806,11 @@ main .faq .father-dropdown-container .dropdown-container .bg-dropdown-container 
   }
   .cozy-web-app__preview div.left {
     border-radius: 12px;
-    background-image: url("./static/img/top-p.png");
+    background-image: url("./../img/top-p.png");
   }
   .cozy-web-app__preview div.right {
     border-radius: 12px;
-    background-image: url("./static/img/bot-p.png");
+    background-image: url("./../img/bot-p.png");
   }
   .feactures {
     display: flex;
