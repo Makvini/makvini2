@@ -79,7 +79,7 @@
                     border-radius: 44px;
                     width: calc(100% + 24px);
                     height: calc(100% + 24px);
-                    background-image: url('/static/img/Form_mobile.png');
+                    background-image: url('./static/img/Form_mobile.png');
                     border-radius: 32px;
                 }
                 .div-free {
@@ -528,11 +528,11 @@ letter-spacing: -0.8px;
         background-repeat: no-repeat; 
         &.left {
            border-radius: 12px;
-            background-image: url('/static/img/top-p.png');
+            background-image: url('./static/img/top-p.png');
         }
         &.right {
             border-radius: 12px ;
-            background-image: url('/static/img/bot-p.png');
+            background-image: url('./static/img/bot-p.png');
         }
     }
 }
