@@ -1,0 +1,103 @@
+@keyframes move {
+	from {
+		margin-left: 0px;
+	}
+	to {
+		margin-left: -350px;
+	}
+}
+@keyframes move_revers {
+	from {
+		margin-left: -350px;
+	}
+	to {
+		margin-left: 0px;
+	}
+}
+.bar-one {
+	animation-direction: alternate;
+	animation-duration: 20s;
+	animation-name: move;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	
+}
+.bar-two {
+	animation-direction: alternate;
+	animation-duration: 20s;
+	animation-name: move_revers;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	
+}
+
+.bar-three {
+    animation-direction: alternate;
+	animation-duration: 20s;
+	animation-name: move;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@media screen and (max-width: 750px) {
+	.bar-four {
+		animation-direction: alternate;
+		animation-duration: 20s;
+		animation-name: move_revers;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		
+	}	
+
+
+	
+}
+
+
+
+@keyframes changeMarginTab2 {
+	0% {
+	  margin-right: 210px;
+	}
+	100% {
+	  margin-right: -210px;
+	}
+	
+  }
+  @keyframes changeMarginTab1 {
+	0% {
+	  margin-right: -210px;
+	}
+	100% {
+	  margin-right: 210px;
+	}
+	
+  }  
+  
+
+  @keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+
+@media screen and (max-width: 750px) {
+  @keyframes changeMarginTab2 {
+	0% {
+	  margin-right: 150px;
+	}
+	100% {
+	  margin-right: -150px;
+	}
+	
+  }
+  @keyframes changeMarginTab1 {
+	0% {
+	  margin-right: -150px;
+	}
+	100% {
+	  margin-right: 150px;
+	}
+	
+  } 
+} 

@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /static
+Disallow: /404.html
+Allow: /static/fav/
+Allow: /static/img/AIBadge.png
+Allow: /index.html
+
+Sitemap: https://logolivery.ai/sitemap.xml

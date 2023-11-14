@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,550;0,600;0,700;1,400;1,500;1,600;1,700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: none;
+  position: fixed;
+  overflow: hidden;
+  z-index: 999;
+  padding: 0 56px 0 56px;
+  transition: top 0.3s ease-out, background-color 0.2s ease-out, height 0.1s ease-out;
+}
+header.my-top-header {
+  top: 0;
+  transition: top 0.2s ease-out;
+}
+header.my-top-header.hide {
+  top: -100%;
+}
+header section {
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+header section .topnav {
+  display: flex;
+  flex-flow: row;
+  justify-self: center;
+  align-self: center;
+  padding: 0 16px 0 16px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #FFFFFF;
+  height: 80px;
+  border: 1.2px solid rgba(15, 27, 94, 0.08);
+  border-radius: 0px 0px 16px 16px;
+}
+header section .topnav .brand {
+  margin-left: 14px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-flow: row;
+  justify-self: center;
+  align-self: center;
+  gap: 12px;
+  text-decoration: none;
+}
+header section .topnav .brand #imgLogotypeHeaderMobile {
+  display: none;
+}
+header section .topnav .brand img {
+  width: 151px;
+}
+header section .topnav .brand p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 7px;
+  background: rgba(63, 93, 229, 0.08);
+  border-radius: 4px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 14px;
+  /* identical to box height, or 108% */
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* Brnd-Blue */
+  color: #3F5DE5;
+}
+header section .topnav .nav-links {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+header section .topnav .nav-links .line-header {
+  height: 20px;
+  width: 0;
+  border: 1.2px solid rgba(15, 27, 94, 0.08);
+  margin: 0 12px 0 12px;
+}
+header section .topnav .nav-links .line-header.mobile {
+  display: none;
+}
+header section .topnav .nav-links a {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  color: #9095AC;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 6px;
+  background: rgba(65, 94, 237, 0);
+  transition: color 0.2s ease-out, background 0.2s ease-out;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+header section .topnav .nav-links a:hover {
+  background: rgba(65, 94, 237, 0.06);
+  color: #415EED;
+}
+header section .topnav .nav-actions {
+  display: flex;
+  flex-flow: row;
+  justify-self: end;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  z-index: 10;
+}
+header section .topnav .nav-actions .icon {
+  display: none;
+  position: relative;
+  z-index: 10;
+}
+header section .topnav .nav-actions .a-free {
+  border: none;
+  text-decoration: none;
+}
+header section .topnav .nav-actions .a-free .button-free {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114%;
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 10px;
+  border: none;
+  background: linear-gradient(83.44deg, rgba(247, 248, 252, 0) 0%, #F7F8FC 49.42%, rgba(247, 248, 252, 0) 100%), linear-gradient(270deg, #415EED 0%, #3651DA 100%);
+  background-blend-mode: soft-light, normal;
+  border-radius: 6px;
+}
+header section .topnav .nav-actions .a-free .button-free img {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  width: 16px;
+  height: 16px;
+}
+header section .topnav .nav-actions .a-free .button-free::after {
+  content: "Try for Free";
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114%;
+  color: #FFFFFF;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  padding: 16px 20px;
+  gap: 10px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(83.2deg, rgba(247, 248, 252, 0) 0%, rgba(247, 248, 252, 0.9) 49.42%, rgba(247, 248, 252, 0) 100%), linear-gradient(270deg, #3651DA 0%, #1933B4 100%);
+  background-blend-mode: soft-light, normal;
+  border-radius: 6px;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+header section .topnav .nav-actions .a-free .button-free:hover::after {
+  opacity: 1;
+}
+header section .topnav .nav-actions .a-how {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  border-radius: 6px;
+}
+header section .topnav .nav-actions .a-how button {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  color: #4D526D;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  text-align: center;
+  background: none;
+  cursor: pointer;
+}
+header section .topnav .nav-actions .a-how svg g path {
+  transition: all 0.2s ease-out;
+}
+header section .topnav .nav-actions .a-how:hover {
+  cursor: pointer;
+  background-color: rgba(65, 94, 237, 0.1019607843);
+}
+header section .topnav .nav-actions .a-how:hover button {
+  color: #415EED;
+}
+header section .topnav .nav-actions .a-how:hover svg g path {
+  fill: #415EED;
+}
+
+@media screen and (max-width: 1000px) {
+  header section .topnav .nav-links {
+    display: none;
+    gap: 0px;
+    height: auto;
+    width: 100%;
+    max-width: 348px;
+  }
+  header section .topnav .nav-links .line-header {
+    height: 0;
+    width: 100%;
+    border: 1.2px solid rgba(15, 27, 94, 0.08);
+    margin: 12px 0 12px 0;
+  }
+  header section .topnav .nav-links .line-header.mobile {
+    display: inline;
+  }
+  header section .topnav .nav-links a {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    color: #7E839D;
+    width: 100%;
+    text-align: start;
+    text-decoration: none;
+    padding: 20px 16px;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 6px;
+    background: rgba(65, 94, 237, 0);
+    transition: color 0.2s ease-out, background 0.2s ease-out;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+  }
+  header section .topnav .nav-links a:hover {
+    background: rgba(65, 94, 237, 0.06);
+    color: #415EED;
+  }
+  header section .topnav .nav-links .a-how {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px, 16px, 20px, 16px;
+    gap: 0px;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+    border-radius: 6px;
+  }
+  header section .topnav .nav-links .a-how button {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 500;
+    color: #7E839D;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+    text-align: center;
+    background: none;
+    cursor: pointer;
+  }
+  header section .topnav .nav-links .a-how svg {
+    width: 20px;
+    height: 20px;
+  }
+  header section .topnav .nav-links .a-how svg g path {
+    transition: all 0.2s ease-out;
+  }
+  header section .topnav .nav-links .a-how:hover {
+    cursor: pointer;
+    background-color: rgba(65, 94, 237, 0.1019607843);
+  }
+  header section .topnav .nav-links .a-how:hover button {
+    color: #415EED;
+  }
+  header section .topnav .nav-links .a-how:hover svg g path {
+    fill: #415EED;
+  }
+  header section .topnav .nav-links.opened {
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 85px;
+    padding: 12px;
+    left: auto;
+    right: 0;
+    background: #FFFFFF;
+    border: 1.2px solid rgba(15, 27, 94, 0.08);
+    border-radius: 16px;
+  }
+  header section .topnav .nav-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    gap: 10px;
+    position: relative;
+    z-index: 10;
+    height: 56px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #F3F4F9;
+    border: 1px solid rgba(15, 27, 94, 0.08);
+    border-radius: 50px;
+  }
+  header section .topnav .nav-actions .icon {
+    float: right;
+    display: block;
+  }
+  header section .topnav .nav-actions .icon .nav-toggle {
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid transparent;
+    margin: 7px 0;
+  }
+  header section .topnav .nav-actions .icon .nav-toggle:focus {
+    outline-width: 0;
+  }
+  header section .topnav .nav-actions .icon .nav-toggle [class*=bar-] {
+    background: #9095AC;
+    display: block;
+    transform: rotate(0deg);
+    transition: 0.2s ease all;
+    height: 1.6px;
+    width: 15px;
+    margin-bottom: 4px;
+  }
+  header section .topnav .nav-actions .icon .nav-toggle .bar-bot {
+    margin-bottom: 0;
+  }
+  header section .topnav .nav-actions .icon .opened .bar-top {
+    transform: rotate(45deg);
+    transform-origin: 15% 15%;
+    margin-bottom: 0px;
+    background: #415EED;
+  }
+  header section .topnav .nav-actions .icon .opened .bar-mid {
+    opacity: 0;
+  }
+  header section .topnav .nav-actions .icon .opened .bar-bot {
+    transform: rotate(-45deg);
+    transform-origin: 15% 95%;
+    margin-bottom: 0px;
+    background: #415EED;
+  }
+  header section .topnav .nav-actions .a-free .button-free {
+    border-radius: 100px;
+    padding: 12px;
+    background: linear-gradient(45deg, rgba(247, 248, 252, 0) 0%, #F7F8FC 49.42%, rgba(247, 248, 252, 0) 100%), linear-gradient(270deg, #415EED 0%, #3651DA 100%);
+  }
+  header section .topnav .nav-actions .a-free .button-free p {
+    display: none;
+  }
+  header section .topnav .nav-actions .a-free .button-free img {
+    position: relative;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+  }
+  header section .topnav .nav-actions .a-free .button-free::after {
+    content: "";
+    border-radius: 1000px;
+  }
+}
+@media screen and (max-width: 750px) {
+  header {
+    padding: 0 16px 0 16px;
+  }
+  header section .topnav {
+    padding: 0 8px 0 8px;
+  }
+  header section .topnav .brand {
+    margin-left: 8px;
+    gap: 10px;
+  }
+  header section .topnav .brand #imgLogotypeHeader {
+    display: none;
+  }
+  header section .topnav .brand #imgLogotypeHeaderMobile {
+    display: block;
+  }
+  header section .topnav .brand img {
+    width: 32px;
+  }
+  header section .topnav .brand p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 7px;
+    background: rgba(63, 93, 229, 0.08);
+    border-radius: 4px;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 14px;
+    /* identical to box height, or 108% */
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* Brnd-Blue */
+    color: #3F5DE5;
+  }
+  header section .topnav .nav-links {
+    max-width: none;
+  }
+}/*# sourceMappingURL=header.css.map */
