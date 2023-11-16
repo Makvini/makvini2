@@ -1283,10 +1283,12 @@ main .faq .father-dropdown-container .dropdown-container .bg-dropdown-container 
 .cozy-web-app__preview div.left {
   border-radius: 0 12px 12px 0;
   background-image: url("./../img/app_preview_left.png");
+  box-shadow: 0 0 0 1.2px #DADCE8;
 }
 .cozy-web-app__preview div.right {
   border-radius: 12px 0 0 12px;
   background-image: url("./../img/app_preview_right.png");
+  box-shadow: 0 0 0 1.2px #DADCE8;
 }
 
 .feactures {

@@ -341,9 +341,6 @@ header section .topnav .nav-actions .a-how:hover svg g path {
     height: 56px;
     margin-top: auto;
     margin-bottom: auto;
-    background: #F3F4F9;
-    border: 1px solid rgba(15, 27, 94, 0.08);
-    border-radius: 50px;
   }
   header section .topnav .nav-actions .icon {
     float: right;
@@ -388,12 +385,17 @@ header section .topnav .nav-actions .a-how:hover svg g path {
     background: #415EED;
   }
   header section .topnav .nav-actions .a-free .button-free {
-    border-radius: 100px;
-    padding: 12px;
+    border-radius: 6px;
+    padding: 14px 18px;
     background: linear-gradient(45deg, rgba(247, 248, 252, 0) 0%, #F7F8FC 49.42%, rgba(247, 248, 252, 0) 100%), linear-gradient(270deg, #415EED 0%, #3651DA 100%);
   }
   header section .topnav .nav-actions .a-free .button-free p {
-    display: none;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    position: relative;
+    z-index: 2;
   }
   header section .topnav .nav-actions .a-free .button-free img {
     position: relative;
@@ -403,7 +405,7 @@ header section .topnav .nav-actions .a-how:hover svg g path {
   }
   header section .topnav .nav-actions .a-free .button-free::after {
     content: "";
-    border-radius: 1000px;
+    border-radius: 6px;
   }
 }
 @media screen and (max-width: 750px) {

@@ -388,9 +388,7 @@ header {
                     height: 56px;
                     margin-top: auto;
                     margin-bottom: auto;
-                    background: #F3F4F9;
-                    border: 1px solid rgba(15, 27, 94, 0.08);
-                    border-radius: 50px;
+                    
                     .icon {
                         float: right;
                         display: block;
@@ -447,11 +445,18 @@ header {
                     }
                     .a-free {
                         .button-free {
-                            border-radius: 100px;
-                            padding: 12px;
+                            border-radius: 6px;
+                            padding: 14px 18px;
                             background: linear-gradient(45deg, rgba(247, 248, 252, 0) 0%, #F7F8FC 49.42%, rgba(247, 248, 252, 0) 100%), linear-gradient(270deg, #415EED 0%, #3651DA 100%);
+                            
+
                             p {
-                                display: none;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 14px;
+                                position: relative;
+                                z-index: 2;
                             }
                             img {
                                 position: relative;
@@ -461,7 +466,7 @@ header {
                             }
                             &::after {
                                 content: "";
-                                border-radius: 1000px;
+                                border-radius: 6px;
                             }
 
                         }
