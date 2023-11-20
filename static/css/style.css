@@ -832,7 +832,8 @@ main .container-three-card .row-card .card-svg p {
   max-width: 588px;
 }
 main .container-three-card .row-card .card-svg .bg-card-svg {
-  margin-bottom: 98px;
+  margin-top: auto;
+  margin-bottom: 0px;
   width: 100%;
   height: 380px;
   background-image: url("./../img/tab_element_icon/svg-card-bg.png");
